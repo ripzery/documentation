@@ -139,7 +139,7 @@ Access Funds in a Mnemonic Phrase Wallet
     };
 
     let mnemonic = "radar blur cabbage chef fix engine embark joy scheme fiction master release";
-    let hdnode = ethers.HDNode.fromMnemonic(mnemonic);
+    let hdnode = ethers.utils.HDNode.fromMnemonic(mnemonic);
     let node = hdnode.derivePath(walletPath.standard);
 
     let wallet = new ethers.Wallet(node.privateKey);
